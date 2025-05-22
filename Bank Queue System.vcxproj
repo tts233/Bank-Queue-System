@@ -129,9 +129,13 @@
   <ItemGroup>
     <ClCompile Include="Authenticator.cpp" />
     <ClCompile Include="LogManager.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp17</LanguageStandard>
+    </ClCompile>
     <ClCompile Include="MenuManager.cpp" />
-    <ClCompile Include="QueueManager.cpp" />
+    <ClCompile Include="QueueManager.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp17</LanguageStandard>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Authenticator.h" />
